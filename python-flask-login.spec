@@ -1,14 +1,15 @@
 #
 # Conditional build:
 %bcond_without  python2 # CPython 2.x module
-%bcond_without  python3 # CPython 3.x module
+%bcond_with  python3 # CPython 3.x module
 
 %define         module  flask-login
 Summary:	Flask-Login provides user session management for Flask
 Summary(pl.UTF-8):	Wsparcie dla zarzadzania sesja uzytkownika w aplikacjach Flask
 Name:		python-%{module}
+# keep python2 compatible version here
 Version:	0.5.0
-Release:	5
+Release:	6
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-Login/Flask-Login-%{version}.tar.gz
