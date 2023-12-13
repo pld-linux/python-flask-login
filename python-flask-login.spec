@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Obsługa zarządzania sesją użytkownika w aplikacjach Flask
 Name:		python-%{module}
 # keep python2 compatible version (0.5.x) here
 Version:	0.5.0
-Release:	6
+Release:	7
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/F/Flask-Login/Flask-Login-%{version}.tar.gz
