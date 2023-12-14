@@ -35,6 +35,9 @@ BuildRequires:	python3-semantic_version
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
+%if %{with doc}
+BuildRequires:	sphinx-pdg-2
+%endif
 Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
